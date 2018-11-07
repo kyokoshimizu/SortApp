@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <form class="number-form">
+    <mat-form-field class="form-field">
+      <input matInput placeholder="Please input numbers"
+        [(ngModel)]="nums" name="numbers"
+        (ngModelChange)="onChange()">
+    </mat-form-field>
+  </form>
+ 
+  <div>{{ sortedNums }}</div>
+</div>
