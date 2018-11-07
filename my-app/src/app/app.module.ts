@@ -3,14 +3,31 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule, MatCheckboxModule, MatInputModule, MatSidenavModule,
+  MatTableModule, MatTabsModule, } from '@angular/material';
+import { SortComponent } from './sort/sort.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SortComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatTableModule,
+    MatTabsModule,
+  ],
+  exports: [
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
